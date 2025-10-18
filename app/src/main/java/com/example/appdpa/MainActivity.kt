@@ -13,6 +13,7 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.Preview
 import com.example.appdpa.presentation.auth.LoginScreen
 import com.example.appdpa.presentation.auth.RegisterScreen
+import com.example.appdpa.presentation.navigation.AppNavGraph
 import com.example.appdpa.ui.theme.AppDPATheme
 
 class MainActivity : ComponentActivity() {
@@ -21,8 +22,7 @@ class MainActivity : ComponentActivity() {
         enableEdgeToEdge()
         setContent {
             AppDPATheme {
-                //LoginScreen()
-                RegisterScreen()
+                AppNavGraph()
             }
         }
     }
